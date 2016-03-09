@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <ul>
+            {% if page.url == '/' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="/">Home</a></li>
+
+            {% if page.url == '/travel.html' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="/travel.html">Travel</a></li>
+
+            {% if page.url == '/food.html' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="/food.html">Food</a></li>
+
+            {% if page.url == '/fashion.html' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="/fashion.html">Fashion</a></li>
+
+            {% if page.url == '/james/' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="{{ site.baseurl }}/james/">James's corner</a></li>
+
+            {% if page.url == '/random/' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="{{ site.baseurl }}/random.html">Random</a></li>
+
+            {% if page.url == '/about/' %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+            <a href="{{ site.baseurl }}/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
